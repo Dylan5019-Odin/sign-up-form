@@ -14,3 +14,43 @@ body {
     height: 100%;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 25px;
+}
+
+.text-content {
+    font-weight: 600;
+}
+
+.text-cta {
+    margin: 25px 0px;
+}
+
+em {
+    font-style: italic;
+}
+
+label {
+    display: inline-block;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+.user-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field {
+    margin-right: 12px;
+}
+
+
