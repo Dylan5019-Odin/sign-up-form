@@ -9,6 +9,7 @@
     <title>Sign Up Form</title>
   </head>
   <body>
+    
     <div class="img-container">
       <img
         class="background-img"
@@ -30,33 +31,33 @@
         </div>
 
         <div class="form-container">
-          <form class="" action="">
+          <form id="form" action="#">
             <div class="user-inputs">
               <div class="input-field">
                 <div>
-                  <label for="fname">First Name:</label>
+                  <label for="fname">First Name</label>
                 </div>
-                <input type="text" name="fname" id="fname" />
+                <input type="text" name="fname" id="fname" required />
               </div>
               <div class="input-field">
                 <div>
-                  <label for="lname">Last Name:</label>
+                  <label for="lname">Last Name</label>
                 </div>
-                <input type="text" name="lname" id="lname" />
+                <input type="text" name="lname" id="lname" required/>
               </div>
             </div>
             <div class="user-inputs">
               <div class="input-field">
                 <div>
-                  <label for="email">Email:</label>
+                  <label for="email">Email</label>
                 </div>
-                <input type="email" name="emial" id="email" />
+                <input type="email" name="emial" id="email" required/>
               </div>
               <div class="input-field">
                 <div>
-                  <label for="phone">Phone Number:</label>
+                  <label for="phone">Phone Number</label>
                 </div>
-                <input type="number" name="phone" id="phone" />
+                <input type="tel" name="phone" id="phone" required/>
               </div>
             </div>
             <div class="user-inputs">
@@ -64,21 +65,22 @@
                 <div>
                   <label for="password">Password</label>
                 </div>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required/>
               </div>
               <div class="input-field">
                 <div>
                   <label for="c-password">Confirm Password</label>
                 </div>
-                <input type="password" name="c-password" id="c-password" />
+                <input type="password" name="c-password" id="c-password"required/>
               </div>
             </div>
+            <button style="visibility: hidden;"></button>
           </form>
         </div>
 
         <div class="bottom-section">
             <hr>
-            <button>Create Account</button>
+            <button type="submit" form="form" value="Submit">Create Account</button>
             <p>Already have an account? <a href="">Log In</a></p>
         </div>
 
