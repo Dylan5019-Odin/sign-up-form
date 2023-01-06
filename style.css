@@ -5,14 +5,40 @@ body {
 }
 
 .img-container {
-    background-color: blue;
     height: auto;
-    width: 40rem;
+    width: 60rem;
     overflow: hidden;
+    position: relative;
 }
 
 .background-img {
     height: 100%;
+}
+
+.logo-container {
+    background: rgba(0,0,0,.5);
+    border-radius: 15px;
+    width: 95%;
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.logo-container p {
+    font-size: 64px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    max-height: 80%;
 }
 
 .content-container {
@@ -51,7 +77,11 @@ body {
     
 }
 
-
+hr { 
+   
+    box-shadow: 0 8px 6px -6px black;
+    
+}
 
 em {
     font-style: italic;
@@ -70,10 +100,40 @@ form input {
     height: 24px;
     border: 1px solid rgba(128,128,128, .25);
     border-radius: 5px;
+    
 }
 
 input:valid {
    border: 1px solid rgba(46, 204, 113, 1);
 }
+
+input:focus-within {
+    outline: none ;
+    border:1px solid blue;
+}
+
+
+button {
+    background-color: #596D48;
+    border: none;
+    width: 225px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.bottom-section {
+    font-size: 18px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #596D48;
+}
+
 
 
